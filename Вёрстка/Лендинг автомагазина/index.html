@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
-  <script src="../../main.js" defer></script>
   <title>Лендинг автомагазина</title>
 </head>
 <body>
@@ -53,7 +52,7 @@
             <p class="promo-text">Оставьте заявку ниже и мы найдем<br>
               запчасть из Японии за 60 минут</p>
           
-            <a class="promo-btn" href="#calculator">Заказать</a>
+            <a class="btn promo-btn" href="#calculator">Заказать</a>
           </div>
           
           <img src="./img/turbo.jpg" alt="turbo" width="380">
@@ -103,8 +102,141 @@
           
           </div>
           
+      </section>
+
+      <section class="features">
+        <h2 class="features-title">
+          Самый большой ассортимент<br> наличия без переплат
+        </h2>
+
+        <div class="features-container">
+          <div class="icons">
+            <div class="icons-item">
+              <img src="./icons/hands.jpg" alt="hands" width="60">
+
+              <p class="icons-text">
+                Гарантия на двигатели 120 дней
+              </p>
+            </div>
+            <div class="icons-item">
+              <img src="./icons/cart.jpg" alt="cart" width="60">
+
+              <p class="icons-text">
+                2400 деталей в наличии
+              </p>
+            </div>
+            <div class="icons-item">
+              <img src="./icons/fly.jpg" alt="fly" width="60">
+
+              <p class="icons-text">
+                Доставка от 7 дней
+              </p>
+            </div>
+            <div class="icons-item">
+              <img src="./icons/money.jpg" alt="money" width="60">
+
+              <p class="icons-text">
+                Безопасная сделка
+              </p>
+            </div>
+          </div>
+
+          <div class="features-descr">
+            <p class="features-text">
+              Низкие цены за счет прямых<br> контрактов с поставщиками
+            </p>
+
+            <p class="features-text-small">
+              Если вы нашли запчасти у наших конкурентов дешевле, мы готовы сделать вам встречное предложение. Нам важна наша репутация, мы стараемся для вас.
+            </p>
+
+            <p class="features-text-small">
+              Именно поэтому большинство наших клиентов приходят к нам по рекомендации.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator" id="calculator">
+        <h2 class="calculator-title">
+          Калькулятор<br> стоимости запчастей
+        </h2>
+
+        <div class="calculator-container">
+          <div class="calculator-left-side">
           
+
+            <div class="calculator-img">
+              <p class="img-text">
+                Уточните наличие деталей вашего автомобиля прямо сейчас
+              </p>
+  
+              <img src="./img/warehouse.jpg" alt="warehouse">
+            </div>
+          
+          </div>
+  
+          <div class="calculator-right-side">
+            <p class="right-side-text">
+              При заказе свыше <span>10 000</span> руб.<br> вы получите <span>скидку 5%</span>
+            </p>
+  
+            <form class="calculator-form" method="POST" action="form.php">
+              <input type="text" name="car-year" id="car-year" placeholder="Год выпуска" required>
+  
+              <input type="text" name="car-brand" id="car-brand" placeholder="Марка авто" required>
+              
+              <input type="text" name="car-vin" id="car-vin" placeholder="VIN код" required>
+              
+              <input type="tel" name="client-telephone" id="client-telephone" placeholder="Телефон" required>
+              
+              <input type="text" name="name-part" id="name-part" placeholder="Название запчасти" required>
+  
+              <button class="btn form-btn" type="submit">Заказать запчасть</button>
+  
+              <p class="form-privacy">
+                Нажимая на кнопку вы принимаете <span>Положение</span> и <span>Согласие</span> на обработку персональных данных
+              </p>
+            </form>
+  
+            
+          </div>
+        </div>
         
+      </section>
+
+      <section class="delivery">
+        <h2 class="delivery-title">Доставка и оплата</h2>
+
+        <div class="delivery-items">
+          <div class="delivery-item">
+            
+              <img src="./icons/delivery.jpg" alt="delivery">
+              <p class="delivery-img-text">Доставка</p>
+              <p class="delivery-img-subtext">Железно в срок</p>
+              <p class="delivery-img-descr">
+                Доставим товар в течении 7 дней. При весе детали более 10кг, нужно будет согласовать все пошлины и условия, а также время доставки
+              </p>
+          </div>
+          <div class="delivery-item">
+          
+              <img src="./icons/coins.jpg" alt="coins">
+              <p class="delivery-img-text">Оплата</p>
+              <p class="delivery-img-subtext">Любые виды платежей</p>
+              <p class="delivery-img-descr">
+                100% предоплата. Гарантия возврата денег в срок до 30 дней. Оплатить можно безналичным и наличным расчетом, также на рассчетный счет предприятия
+              </p>
+          </div>
+          <div class="delivery-item">
+           
+              <img src="./icons/pig.jpg" alt="pig">
+              <p class="delivery-img-text">Возврат платежей</p>
+              <p class="delivery-img-subtext">Возвращаем деньги</p>
+              <p class="delivery-img-descr">
+                В случае наступления гарантийного случая без проблем возвратим ваши средства. Для возврата нужно оформить заявку через менеджера
+              </p>
+          </div>
+        </div>
       </section>
 
     </main>
